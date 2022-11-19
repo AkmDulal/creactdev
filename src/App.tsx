@@ -88,7 +88,7 @@ function App() {
       <div className="flex flex-col">
         <div className="overflow-x-auto">
           <div className="py-3 pl-2">
-            <div className="relative max-w-xs">
+            <div className="relative max-w-xs ">
               <label htmlFor="hs-table-search" className="sr-only">
                 Search
               </label>
@@ -97,7 +97,7 @@ function App() {
                 name="hs-table-search"
                 onChange={(searchVal) => requestSearch(searchVal.target.value)}
                 id="hs-table-search"
-                className="block w-full p-3 pl-10 text-sm border-gray-200 rounded-md focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                className="block w-full p-3 pl-10 text-sm border-gray-200 rounded-md focus:border-blue-500 focus:ring-blue-500 bg-[#1f2937] dark:border-gray-700 dark:text-gray-400"
                 placeholder="Search..."
               />
               <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
@@ -118,11 +118,11 @@ function App() {
           <div className="p-1.5 w-full inline-block align-middle">
             <div className="relative overflow-scroll m-auto bg-white rounded-lg shadow overflow-y-auto relative w-full">
               <table className="border-collapse table-auto w-full whitespace-no-wrap bg-white table-striped relative">
-                <thead className="dark:bg-gray-900">
+                <thead className="dark:bg-gray-900 bg-[#1f2937]">
                   <tr>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-xs font-bold text-left text-white uppercase "
+                      className="px-6 py-3 text-xs  font-bold text-left text-white uppercase "
                     // className="py-2 px-1 sticky top-0 left-0 border-b border-gray-200 bg-gray-100 w-16 text-center z-10"
                     >
                       ID
@@ -130,7 +130,7 @@ function App() {
                     <th
                       scope="col"
                       onClick={() => sorting("name")}
-                      className=" px-6 py-3 sticky top-0 left-0 dark:bg-gray-900 z-10 text-xs font-bold text-left text-white uppercase bg-gray-50 "
+                      className=" px-6 py-3 sticky bg-[#1f2937] top-0 left-0 dark:bg-gray-900 z-10 text-xs font-bold text-left text-white uppercase bg-gray-50 "
                     >
                       <span className="inline-flex items-center">
                         Name
