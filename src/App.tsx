@@ -130,7 +130,7 @@ function App() {
                     <th
                       scope="col"
                       onClick={() => sorting("name")}
-                      className=" px-6 py-3 sticky bg-[#1f2937] top-0 left-0 dark:bg-gray-900 z-10 text-xs font-bold text-left text-white uppercase bg-gray-50 "
+                      className=" px-6 py-3 sticky bg-[#1f2937] max-[600px]:bg-[#1f2937] top-0 left-0 dark:bg-gray-900 z-10 text-xs font-bold text-left text-white uppercase bg-gray-50 "
                     >
                       <span className="inline-flex items-center">
                         Name
